@@ -2227,7 +2227,7 @@ def do_report(fn, lex='', ed_=ed):
             f.write(    '<td><pre>{}</pre></td>\n'.format(cmt_opts.get(opt, '')))
             f.write(    '</tr>\n')
             lex_opts.pop(opt, None)                                                                                     if lex else None
-        for opt in lex_opts.keys():
+        for opt in lex_opts:
             winner  = 'lex'
             f.write(    '<tr>\n')
             f.write(    '<td>{}</td>\n'.format(opt))

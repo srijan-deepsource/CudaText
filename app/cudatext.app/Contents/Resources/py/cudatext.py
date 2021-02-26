@@ -1174,7 +1174,7 @@ def dlg_proc(id_dialog, id_action, prop='', index=-1, index2=-1, name=''):
 
     #cleanup storage of live callbacks
     if id_action == DLG_FREE:
-        for k in [k for k in _live.keys() if k.startswith(str(id_dialog)+':')]:
+        for k in [k for k in _live if k.startswith(str(id_dialog)+':')]:
             _live.pop(k)
 
     #support live callbacks by replacing them to str
