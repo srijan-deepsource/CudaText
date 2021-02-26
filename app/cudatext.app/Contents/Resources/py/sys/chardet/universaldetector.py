@@ -125,7 +125,7 @@ class UniversalDetector(object):
         if self.done:
             return
 
-        if not len(byte_str):
+        if not byte_str:
             return
 
         if not isinstance(byte_str, bytearray):
