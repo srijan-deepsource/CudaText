@@ -9,7 +9,7 @@ ToDo: (see end of file)
 import  re, os, sys, json, collections, itertools, webbrowser, tempfile, html, pickle, time, datetime
 from    itertools       import *
 from pathlib import PurePath as PPath
-from pathlib import     Path as  Path
+from pathlib import     Path
 def first_true(iterable, default=False, pred=None):return next(filter(pred, iterable), default) # 10.1.2. Itertools Recipes
 
 import  cudatext            as app
