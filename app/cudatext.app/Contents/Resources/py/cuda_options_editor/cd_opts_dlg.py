@@ -282,8 +282,7 @@ def load_vals(opt_dfns:list, lexr_json='', ed_=None, full=False, user_json='user
             return  ('bool'     if isinstance(val, bool)    else
                      'int'      if isinstance(val, int)     else
                      'float'    if isinstance(val, float)   else
-                     'json'     if isinstance(val, list)    or
-                                   isinstance(val, dict)    else
+                     'json'     if isinstance(val, (list, dict))    else
                      'hotk'     if '_hotkey_' in val        else
                      'font'     if isinstance(val, str)     and 
                                    reFontNm.search(val)     else
