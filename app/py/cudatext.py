@@ -1353,7 +1353,7 @@ class Editor:
             y = str(y)
             len = str(len)
 
-        column = 1 if show_on_map==True else -1 if show_on_map==False else show_on_map
+        column = 1 if show_on_map is True else -1 if show_on_map==False else show_on_map
 
         return ct.ed_attr(self.h, id, tag,
                           x, y, len,

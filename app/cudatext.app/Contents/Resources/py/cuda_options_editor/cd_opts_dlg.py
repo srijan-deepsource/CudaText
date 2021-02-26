@@ -776,8 +776,8 @@ class OptEdD:
             elif frm in ('bool',):
                 vis['edrf'] = True
                 vis['edrt'] = True
-                vas['edrf'] = ulfvl_va==False
-                vas['edrt'] = ulfvl_va==True
+                vas['edrf'] = ulfvl_va is False
+                vas['edrt'] = ulfvl_va is True
             elif frm in ('int2s', 'str2s'):
                 vis['edcb'] = True
                 ens['edcb'] = True
