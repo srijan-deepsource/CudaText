@@ -1156,7 +1156,7 @@ class OptEdD:
                        ,lexr=m.lexr_l.index(m.lexr)     if m.lexr in m.lexr_l else -1
                        )
         if '+' in what:
-            rsp = dict()
+            rsp = {}
             if '+lvls' in what:
                 rsp.update(dict(
                         lvls=m.cur_in
