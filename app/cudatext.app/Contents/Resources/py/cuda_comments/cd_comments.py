@@ -123,9 +123,7 @@ class Command:
         pass;                  #LOG and log('y1,y2,lines={}', (y1,y2,lines))
         do_uncmt    = ed_.get_text_line(rWrks[0]).lstrip().startswith(cmt_sgn) \
                         if cmt_act=='bgn' else \
-                      True \
-                        if cmt_act=='del' else \
-                      False
+                      cmt_act=='del'
         # Work
         save_bd_col = apx.get_opt('comment_save_column' , False)
         at_min_bd   = apx.get_opt('comment_equal_column', False)
